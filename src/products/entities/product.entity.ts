@@ -8,12 +8,15 @@ export class Product {
   @Column()
   name: string;
 
-  @Column('text')
-  description: string;
+  @Column()
+  otherNames: string;
 
   @Column()
-  price: number;
+  pricePerBag: string;
 
   @Column()
-  stock: number;
+  pricePerKg: string;
+
+  @Column()
+  imageUrl: string;
 }
